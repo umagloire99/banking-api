@@ -24,24 +24,24 @@ features. The Banking API platform is to build the basic REST API for one of tho
 multiple frontends(web, IOS, Android, etc).
 
 ## Features
--[x] There should be API routes that allow them to:
+- [x] There should be API routes that allow them to:
     - Authenticate users
     - Create a new bank account for a customer, with an initial deposit amount. A single customer may have multiple bank accounts.
     - Transfer amounts between any two accounts, including those owned by different customers.
     - Retrieve balances for a given account.
     - Retrieve transfer history for a given account.
--[x] All endpoints should only be accessible if an API key is passed as a header.
--[x] All role-based endpoints should require authentication.
--[x] Write tests for your business logic.
--[x] Provide a documentation (published with Postman) that says what endpoints are available and the kind of parameters they expect.
--[x] You are expected to design all required models and routes for your API.
+- [x] All endpoints should only be accessible if an API key is passed as a header.
+- [x] All role-based endpoints should require authentication.
+- [x] Write tests for your business logic.
+- [x] Provide a documentation (published with Postman) that says what endpoints are available and the kind of parameters they expect.
+- [x] You are expected to design all required models and routes for your API.
 
 ## Requirements
 Make sure your server meets the following requirements.
 
 -   Mysql server 8.0.+
--   Composer installed 1.9+
--   PHP Version 8.0.+
+-   Composer installed 2.2.+
+-   PHP Version 8.1.+
 
 ## Installation
 Install composer with the help of the instructions given [here](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos)
