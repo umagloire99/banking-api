@@ -1,0 +1,8 @@
+{
+    "min_transfer_amount": 1,
+    "max_transfer_amount": 100000,
+    "max_transfer_amount_per_day": 200000,
+    "transfer_fee": 10,
+    "min_age": 15,
+    "max_bank_account": 5
+}
