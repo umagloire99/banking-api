@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('phone')->unique();
             $table->string('name');
-            $table->string('email')->nullable();
+            $table->string('email', 128)->nullable();
             $table->date('dob')->comment('date of birth of the customer');
             $table->string('address')->comment('address of the customer');
             $table->foreignId('user_id')->comment('track the user who register the customer')
