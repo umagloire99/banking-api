@@ -97,7 +97,7 @@ Run the default laravel server for local deployment
 php artisan serve
 ```
 - Online API Documentation: [https://documenter.getpostman.com/view/11198876/2s8YmHwQDM](https://documenter.getpostman.com/view/11198876/2s8YmHwQDM)
-- Hosting: [https://banking-api-platform.herokuapp.com/api/]("https://banking-api-platform.herokuapp.com/api/")
+- Hosting: [https://banking-api-platform.herokuapp.com/api/](https://banking-api-platform.herokuapp.com/api/)
 
 
 ## Testing
