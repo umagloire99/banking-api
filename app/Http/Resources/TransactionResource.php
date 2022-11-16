@@ -37,7 +37,8 @@ class TransactionResource extends JsonResource
             'amount' => $this->amount,
             'fee' => $this->fee,
             'balance' => $this->bankAccountId == $this->source_id ? $this->source_balance :  $this->destination_balance,
-            'role' => $this->bankAccountId == $this->source_id ? 'sender': 'receiver',
+            'role' => $this->bankAccountId == $this->source_id ? 'source': 'destination',
+            'reason' => $this->reason,
             'bank_account' => [
                 'account_name' => $relatedBankAccount->customer->name,
                 'account_number' => $relatedBankAccount->account_number,
