@@ -25,6 +25,7 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+        Passport::loadKeysFrom(base_path(config('passport.key_path')));
         Passport::tokensCan([
             'user-side' => 'User can access user resource',
             'admin-side' => 'user can access admin resource'
