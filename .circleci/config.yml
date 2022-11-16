@@ -29,7 +29,8 @@ jobs:
           force: true
       - run:
           command: |
-            heroku run --app=${HEROKU_APP_NAME} php artisan migrate:fresh --seed
+            yes | heroku run --app=${HEROKU_APP_NAME} php artisan migrate:fresh --seed
+            heroku run --app=${HEROKU_APP_NAME} php artisan passport:install
 workflows:
   deploy:
     jobs:
