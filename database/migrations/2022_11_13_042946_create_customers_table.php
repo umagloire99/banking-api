@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->string('phone')->unique();
-            $table->string('name', 255);
-            $table->string('email', 255)->nullable();
+            $table->string('name');
+            $table->string('email')->nullable();
             $table->date('dob')->comment('date of birth of the customer');
             $table->string('address')->comment('address of the customer');
             $table->foreignId('user_id')->comment('track the user who register the customer')

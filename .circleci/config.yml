@@ -27,12 +27,12 @@ jobs:
       - heroku/install
       - heroku/deploy-via-git:
           force: true
-      - run:
-          command: |
-            yes | heroku run --app=${HEROKU_APP_NAME} php artisan migrate:fresh --seed
-      - run:
-          command: |
-            heroku run --app=${HEROKU_APP_NAME} php artisan passport:install
+#      - run:
+#          command: |
+#            yes | heroku run --app=${HEROKU_APP_NAME} php artisan migrate:fresh --seed
+#      - run:
+#          command: |
+#            heroku run --app=${HEROKU_APP_NAME} php artisan passport:install
 workflows:
   deploy:
     jobs:
